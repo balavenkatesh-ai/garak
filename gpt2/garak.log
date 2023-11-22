@@ -1,0 +1,11 @@
+2023-11-22 04:29:47,825  INFO  invoked with arguments Namespace(model_type=None, model_name=None, seed=None, generations=10, probes='all', detectors='', buff='', eval_threshold=0.5, deprefix=True, plugin_info=None, list_probes=False, list_detectors=False, list_generators=False, list_buffs=False, version=False, verbose=0, generator_option_file=None, generator_options=None, probe_option_file=None, probe_options=None, report_prefix='', narrow_output=False, report='garak.92aea798-cb2c-48c0-ade2-7cdda29dc520.report.jsonl', extended_detectors=False, interactive=False, parallel_requests=False, parallel_attempts=False, generate_autodan=False)
+2023-11-22 04:29:48,154  INFO  probe init: <garak.probes.encoding.InjectAscii85 object at 0x7f3c4320c490>
+2023-11-22 04:29:48,154  INFO  probe init: <garak.probes.encoding.InjectBase16 object at 0x7f3bf9bec130>
+2023-11-22 04:29:48,155  INFO  probe init: <garak.probes.encoding.InjectBase2048 object at 0x7f3c4320c490>
+2023-11-22 04:29:48,155  INFO  probe init: <garak.probes.encoding.InjectBase32 object at 0x7f3bf9bec130>
+2023-11-22 04:29:48,156  INFO  probe init: <garak.probes.encoding.InjectBase64 object at 0x7f3c4320c490>
+2023-11-22 04:29:48,156  INFO  probe init: <garak.probes.encoding.InjectBraille object at 0x7f3bf9bec130>
+2023-11-22 04:29:48,156  INFO  probe init: <garak.probes.encoding.InjectHex object at 0x7f3c4320c490>
+2023-11-22 04:29:48,157  INFO  probe init: <garak.probes.encoding.InjectMorse object at 0x7f3bf9bec130>
+2023-11-22 04:29:48,157  INFO  probe init: <garak.probes.encoding.InjectROT13 object at 0x7f3c4320c490>
+2023-11-22 04:29:48,157  INFO  probe init: <garak.probes.encoding.InjectUU object at 0x7f3bf9bec130>
