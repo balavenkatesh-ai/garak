@@ -1,0 +1,167 @@
+{
+"threats": [
+{
+"threat_id": "frwk_threagile_001",
+"threat_name": "accidental-secret-leak",
+"attack_domain": "Data disclosure",
+"threat_description": "Sourcecode repositories (including their histories) as well as artifact registries can accidentally contain secrets like checked-in or packaged-in passwords, API tokens, certificates, crypto keys, etc.",
+"capec_reference": "TA0003",
+"countermeasure": "Establish measures preventing accidental check-in or package-in of secrets into sourcecode repositories and artifact registries. This starts by using good .gitignore and .dockerignore files, but does not stop there.",
+"mitre_tactic_id": "T1552",
+"mitre_tactic_description": "Unprotected Storage",
+"ics_id": "SAM-020",
+"severity": "High",
+"likelihood": "High",
+"programming_threat_vectors": [
+{
+"threat_vector": "misconfigured-repositories"
+}],
+"social_engineering_threat_vectors": [
+{
+"threat_vector": "insider-with-access"
+}],
+"capec_id": "frwk_threagile_001",
+"cwe_id": "CWE-368"
+},
+{
+"threat_id": "frwk_threagile_002",
+"threat_name": "code-backdooring",
+"attack_domain": "Software integrity",
+"threat_description": "For each build-pipeline component Code Backdooring risks might arise where base images and other layers used contain vulnerable components or backdoors.",
+"capec_reference": "TA0002",
+"countermeasure": "Modify or insert malicious code into the source code.",
+"mitre_tactic_id": "T1022",
+"mitre_tactic_description": "Data Encrypted",
+"ics_id": "VIAM-245",
+"severity": "High",
+"likelihood": "High",
+"programming_threat_vectors": [
+{
+"threat_vector": "insert-malicious-code"
+}],
+"social_engineering_threat_vectors": [
+{
+"threat_vector": "insider-with-access"
+}],
+"capec_id": "frwk_threagile_002",
+"cwe_id": "CWE-368"
+},
+{
+"threat_id": "frwk_threagile_003",
+"threat_name": "container-baseimage-backdooring",
+"attack_domain": "Software integrity",
+"threat_description": "When a technical asset is built using container technologies, Base Image Backdooring risks might arise where base images and other layers used contain vulnerable components or backdoors.",
+"capec_reference": "TA0001",
+"countermeasure": "Insert malicious code into the base image or other layers used in the build process.",
+"mitre_tactic_id": "T1022",
+"mitre_tactic_description": "Data Encrypted",
+"ics_id": "AM-210",
+"severity": "High",
+"likelihood": "High",
+"programming_threat_vectors": [
+{
+"threat_vector": "insert-malicious-code"
+}],
+"social_engineering_threat_vectors": [
+{
+"threat_vector": "insider-with-access"
+}],
+"capec_id": "frwk_threagile_003",
+"cwe_id": "CWE-368"
+},
+{
+"threat_id": "frwk_threagile_012",
+"threat_name": "missing-build-infrastructure",
+"attack_domain": "Vulnerability Mitigation",
+"threat_description": "The modeled architecture does not contain a build infrastructure (devops-client, sourcecode-repo, build-pipeline, etc.), which might be the risk of a model missing critical assets (and thus not seeing their risks).",
+"capec_reference": "TA0001",
+"countermeasure": "Include the build infrastructure in the model.",
+"mitre_tactic_id": "T1022",
+"mitre_tactic_description": "Data Encrypted",
+"ics_id": "SAM-012",
+"severity": "High",
+"likelihood": "High",
+"programming_threat_vectors": [
+{
+"threat_vector": "missed-critical-assets"
+}],
+"social_engineering_threat_vectors": [
+{
+"threat_vector": "insider-with-access"
+}],
+"capec_id": "frwk_threagile_012",
+"cwe_id": "CWE-368"
+}],
+"new_missed_critical_threats": [
+{
+"threat_id": "frwk_threagile_004",
+"threat_name": "unsecured-credentials",
+"attack_domain": "Data disclosure",
+"threat_description": "Sourcecode repositories (including their histories) as well as artifact registries can contain unsecured credentials like API keys, database credentials and others.",
+"capec_reference": "TA0004",
+"countermeasure": "Secure credentials by storing them securely and limiting access to them.",
+"mitre_tactic_id": "T1552",
+"mitre_tactic_description": "Unprotected Storage",
+"ics_id": "VIAM-004",
+"severity": "High",
+"likelihood": "High",
+"programming_threat_vectors": [
+{
+"threat_vector": "insert-malicious-code"
+}],
+"social_engineering_threat_vectors": [
+{
+"threat_vector": "insider-with-access"
+}],
+"capec_id": "frwk_threagile_004",
+"cwe_id": "CWE-368"
+}],
+"new_missed_critical_threats": [
+{
+"threat_id": "frwk_threagile_005",
+"threat_name": "unsecured-artifacts",
+"attack_domain": "Data disclosure",
+"threat_description": "Artifact registries can contain unsecured artifacts like vulnerable dependencies, which attackers might exploit.",
+"capec_reference": "TA0005",
+"countermeasure": "Secure artifacts by storing them securely and limiting access to them.",
+"mitre_tactic_id": "T1552",
+"mitre_tactic_description": "Unprotected Storage",
+"ics_id": "VIAM-005",
+"severity": "High",
+"likelihood": "High",
+"programming_threat_vectors": [
+{
+"threat_vector": "insert-malicious-code"
+}],
+"social_engineering_threat_vectors": [
+{
+"threat_vector": "insider-with-access"
+}],
+"capec_id": "frwk_threagile_005",
+"cwe_id": "CWE-368"
+}],
+"new_missed_critical_threats": [
+{
+"threat_id": "frwk_threagile_006",
+"threat_name": "unsecured-dependencies",
+"attack_domain": "Data disclosure",
+"threat_description": "Dependencies can be unsecured, which attackers might exploit.",
+"capec_reference": "TA0006",
+"countermeasure": "Secure dependencies by storing them securely and limiting access to them.",
+"mitre_tactic_id": "T1552",
+"mitre_tactic_description": "Unprotected Storage",
+"ics_id": "VIAM-006",
+"severity": "High",
+"likelihood": "High",
+"programming_threat_vectors": [
+{
+"threat_vector": "insert-malicious-code"
+}],
+"social_engineering_threat_vectors": [
+{
+"threat_vector": "insider-with-access"
+}],
+"capec_id": "frwk_threagile_006",
+"cwe_id": "CWE-368"
+}
+]}
